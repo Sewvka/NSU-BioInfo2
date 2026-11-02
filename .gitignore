@@ -1,0 +1,14 @@
+# скрипты и кэш запросов — локальные, в решение не входят
+*.py
+__pycache__/
+.cache/
+
+# IDE / ОС
+.vscode/
+.idea/
+.claude/
+Thumbs.db
+.DS_Store
+
+# условия заданий от преподавателя
+Assignment*.pdf

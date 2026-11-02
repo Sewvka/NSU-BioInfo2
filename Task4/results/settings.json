@@ -1,0 +1,47 @@
+{
+ "annotation_date": "2026-10-28",
+ "assembly": "GRCh38",
+ "input": {
+  "file": "data/student_32.vcf",
+  "sha256": "9e49bda5baaff9ee19aae2ab193c2212f42cf77886b5c749f18c48f495fd3975",
+  "records": 50,
+  "by_chrom": {
+   "21": 10,
+   "22": 40
+  },
+  "transitions": 43,
+  "transversions": 7,
+  "ti_tv": 6.14
+ },
+ "ensembl_release": 116,
+ "vep_endpoint": "POST https://rest.ensembl.org/vep/homo_sapiens/region",
+ "vep_parameters": {
+  "flag_pick": 1,
+  "canonical": 1,
+  "mane": 1,
+  "appris": 1,
+  "tsl": 1,
+  "ccds": 1,
+  "hgvs": 1,
+  "protein": 1,
+  "numbers": 1,
+  "variant_class": 1,
+  "uniprot": 1,
+  "af": 1,
+  "af_gnomade": 1,
+  "af_gnomadg": 1,
+  "domains": 1,
+  "SIFT": "b",
+  "PolyPhen": "b"
+ },
+ "vep_transcript_set": "Ensembl (default); без фильтрации транскриптов",
+ "vep_clinvar_version": "09/2025",
+ "transcript_selection": "наиболее значимое последствие (most_severe_consequence VEP, ранжирование Ensembl); при равенстве — MANE Select, canonical, protein_coding, меньший TSL, ENST по алфавиту. Отдельно приводится последствие на MANE Select (колонки mane_*)",
+ "clinvar_source": "NCBI E-utilities: esearch по rsID и по координате (<chr>[chr] AND <pos>[chrpos38]), esummary",
+ "clinvar_matching": "одиночная запись с canonical_spdi == <NC_accession>:<POS-1>:<REF>:<ALT>",
+ "clinvar_stars": "по review status: practice guideline 4, expert panel 3, multiple submitters no conflicts 2, single submitter / conflicting 1, иначе 0",
+ "gnomad_source": "https://gnomad.broadinstitute.org/api",
+ "gnomad_dataset": "gnomad_r4 (gnomAD v4)",
+ "gnomad_af": "joint.ac / joint.an; AF экзомов и геномов отдельно, без усреднения",
+ "missing": "NA — данных нет; отсутствие записи не означает нулевую частоту или доброкачественность"
+}
